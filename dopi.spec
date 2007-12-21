@@ -10,6 +10,7 @@ Source0: http://www.snorp.net/files/dopi/%{name}-%{version}.tar.bz2
 License: GPL
 Group: Sound
 Url: http://www.snorp.net/log/dopi/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: mono-devel
 BuildRequires: ipod-sharp
 BuildRequires: glade-sharp2
