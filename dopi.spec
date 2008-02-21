@@ -17,6 +17,7 @@ BuildRequires: mono-devel
 BuildRequires: ipod-sharp
 BuildRequires: glade-sharp2
 BuildRequires: glib2-devel
+BuildRequires: ndesk-dbus-glib
 BuildRequires: perl-XML-Parser
 BuildRequires: gnome-common intltool
 
@@ -42,9 +43,6 @@ perl -pi -e "s^%_prefix/lib^%_libdir^" %buildroot%_bindir/%name
 %endif
 rm -f %buildroot%_libdir/%name/libbacon*a %buildroot%_libdir/%name/ipod-sharp*
 ln -s %_prefix/lib/ipod-sharp/ipod-sharp* %buildroot%_libdir/%name/
-
-# use the external package
-rm -f %buildroot%_libdir/%name/taglib-sharp*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
