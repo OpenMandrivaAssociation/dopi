@@ -47,6 +47,12 @@ ln -s %_prefix/lib/ipod-sharp/ipod-sharp* %buildroot%_libdir/%name/
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post
+%update_desktop_database
+
+%postun
+%clean_desktop_database
+
 %files
 %defattr(-,root,root)
 %_bindir/%name
