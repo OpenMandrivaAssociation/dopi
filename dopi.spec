@@ -1,13 +1,13 @@
 %define name dopi
 %define version 0.3.4
-%define svn 238
-%define release %mkrel 2.%svn.2
+%define svn 240
+%define release %mkrel 2.%svn.1
 
 Summary: Song uploader for the Apple iPod
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://www.snorp.net/files/dopi/%{name}-%{svn}.tar.bz2
+Source0: http://www.snorp.net/files/dopi/%{name}-r%{svn}.tar.bz2
 Patch: dopi-238-desktopentry.patch
 License: GPL
 Group: Sound
@@ -17,9 +17,10 @@ BuildRequires: mono-devel
 BuildRequires: ipod-sharp
 BuildRequires: glade-sharp2
 BuildRequires: glib2-devel
+BuildRequires: taglib-sharp
 BuildRequires: ndesk-dbus-glib
-BuildRequires: perl-XML-Parser
-BuildRequires: gnome-common intltool
+BuildRequires: intltool
+BuildRequires: gnome-common
 
 %description
 Dopi is an application that allows you to update the songs stored on
