@@ -1,7 +1,7 @@
 %define name dopi
 %define version 0.3.4
 %define svn 240
-%define release %mkrel 2.%svn.1
+%define release %mkrel 2.%svn.2
 
 Summary: Song uploader for the Apple iPod
 Name: %{name}
