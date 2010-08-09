@@ -14,7 +14,7 @@ Group: Sound
 Url: http://www.snorp.net/log/dopi/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: mono-devel
-BuildRequires: ipod-sharp
+BuildRequires: ipod-sharp-devel
 BuildRequires: glade-sharp2
 BuildRequires: glib2-devel
 BuildRequires: taglib-sharp
@@ -47,12 +47,6 @@ ln -s %_prefix/lib/ipod-sharp/ipod-sharp* %buildroot%_libdir/%name/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%post
-%update_desktop_database
-
-%postun
-%clean_desktop_database
 
 %files
 %defattr(-,root,root)
