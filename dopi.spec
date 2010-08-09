@@ -17,7 +17,7 @@ BuildRequires: mono-devel
 BuildRequires: ipod-sharp-devel
 BuildRequires: glade-sharp2
 BuildRequires: glib2-devel
-BuildRequires: taglib-sharp
+BuildRequires: taglib-sharp-devel
 BuildRequires: ndesk-dbus-glib
 BuildRequires: intltool
 BuildRequires: gnome-common
