@@ -1,7 +1,7 @@
 %define name dopi
 %define version 0.3.4
 %define svn 240
-%define release %mkrel 2.%svn.7
+%define release %mkrel 2.%svn.8
 
 Summary: Song uploader for the Apple iPod
 Name: %{name}
@@ -29,6 +29,7 @@ your Apple iPod®, similar to gtkpod.
 %prep
 %setup -q -n %name
 %patch -p0
+
 ./autogen.sh
 
 %build
