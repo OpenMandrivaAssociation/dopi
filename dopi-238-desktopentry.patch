@@ -1,0 +1,20 @@
+Index: dopi.desktop.in
+===================================================================
+--- dopi.desktop.in	(Revision 238)
++++ dopi.desktop.in	(Arbeitskopie)
+@@ -1,12 +1,11 @@
+ [Desktop Entry]
+ Version=1.0
+-Encoding=UTF-8
+ _Name=Dopi iPod Tool
+ _Comment=Update the music on your Apple iPod
+ Exec=dopi
+-Icon=gnome-dev-ipod.png
++Icon=gnome-dev-ipod
+ StartupNotify=true
+ Terminal=false
+ Type=Application
+-Categories=GNOME;Application;AudioVideo;X-Ximian-Main;X-Red-Hat-Base;
+-MimeType=audio/x-mp3;audio/x-mpeg;audio/mpeg;
++Categories=GNOME;AudioVideo;X-Ximian-Main;X-Red-Hat-Base;Audio;Player;
++MimeType=audio/x-mp3;audio/x-mpeg;audio/mpeg;x-content/audio-player;
