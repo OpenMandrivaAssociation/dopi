@@ -11,7 +11,7 @@ Source0: http://www.snorp.net/files/dopi/%{name}-r%{svn}.tar.bz2
 Patch: dopi-238-desktopentry.patch
 License: GPL
 Group: Sound
-Url: http://www.snorp.net/log/dopi/
+Url: https://www.snorp.net/log/dopi/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: mono-devel
 BuildRequires: ipod-sharp-devel
