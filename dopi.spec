@@ -13,6 +13,11 @@ License: GPL
 Group: Sound
 Url: https://www.snorp.net/log/dopi/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: mono-devel
 BuildRequires: ipod-sharp-devel
 BuildRequires: glade-sharp2
